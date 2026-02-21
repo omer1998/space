@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:space/core/ColorManager.dart';
 import 'package:space/model/planet.dart';
-import 'package:space/screen/component/planetScreen.dart';
+import 'package:space/screen/planetScreen.dart';
 import 'package:space/screen/homeScreen.dart';
 import 'package:space/screen/mainScreen.dart';
 

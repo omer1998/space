@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:model_viewer_plus/model_viewer_plus.dart';
 import 'package:space/model/planet.dart';
 
-import '../../core/ColorManager.dart';
+import '../core/ColorManager.dart';
 
 
 class PlanetScreen extends StatelessWidget {

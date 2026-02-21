@@ -2,9 +2,11 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:space/core/ColorManager.dart';
+import 'package:space/screen/mainScreen.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
+  static String route = "/home";
 
   @override
   State<Homescreen> createState() => _HomescreenState();
@@ -103,7 +105,9 @@ class _HomescreenState extends State<Homescreen>
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 22),
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushReplacementNamed(MainScreen.route);
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: ColorManager.primary
                   ),
@@ -113,7 +117,7 @@ class _HomescreenState extends State<Homescreen>
                         padding: const EdgeInsets.symmetric(vertical: 16.0),
                         child: Text("Explore", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w400)),
                       )),
-                      Icon(Icons.arrow_right, color: Colors.white,size: 20,)
+                      Icon(Icons.arrow_forward, color: Colors.white,size: 20,)
                     ],
                   ),
                 ),
